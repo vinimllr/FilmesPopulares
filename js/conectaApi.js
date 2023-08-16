@@ -1,4 +1,4 @@
- const accessToken = env.ACCESS_TOKEN;
+ const accessToken = process.env.ACCESS_TOKEN;
 
 async function getFilmes(){
   const options = {
