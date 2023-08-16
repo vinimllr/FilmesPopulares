@@ -1,5 +1,3 @@
-import accessToken from "../.gitignore/apiKey.js";
-
 async function getFilmes(){
   const options = {
     method: 'GET',
