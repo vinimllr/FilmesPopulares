@@ -1,9 +1,11 @@
+ const accessToken = process.env.ACCESS_TOKEN;
+
 async function getFilmes(){
   const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
+      Authorization: `Bearer ${accessToken}`
     }
   };
   
@@ -17,7 +19,7 @@ async function pesquisaFilmes(titulo){
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
+      Authorization: `Bearer ${accessToken}`
     }
   };
   
