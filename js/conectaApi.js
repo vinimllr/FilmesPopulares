@@ -3,7 +3,7 @@ async function getFilmes(){
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer ${accessToken}`
+      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
     }
   };
   
@@ -17,7 +17,7 @@ async function pesquisaFilmes(titulo){
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer ${accessToken}`
+      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
     }
   };
   
